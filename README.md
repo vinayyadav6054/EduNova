@@ -1,31 +1,64 @@
-# React & Tailwind CSS Starter Pack
+# EduNova - Full Stack Learning Platform
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+EduNova is a full stack learning platform built with React, Tailwind CSS, Node.js, and Express. It provides features such as user authentication, course management, payment integration, and a chatbot for enhanced user experience.
 
-## Usage
+## Features
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+- User authentication (signup, login, OTP verification)
+- Course creation, enrollment, and management
+- Instructor and student dashboards
+- Payment gateway integration
+- Responsive UI with Tailwind CSS
+- Chatbot integration for instant support
 
-1. Clone the repository to your local machine.
+## Getting Started
+
+Follow these steps to set up and run the project locally:
+
+1. **Clone the repository:**
     ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
+    git clone https://github.com/vinayyadav6054/EduNova.git
     ```
 
-1. Install the required packages.
+2. **Install dependencies for both client and server:**
     ```sh
-    cd react-tailwind-css-starter-pack
+    cd EduNova
     npm install
+    cd server
+    npm install
+    cd ..
     ```
 
-1. Start the development server.
+3. **Set up environment variables:**
+    - Create a `.env` file in both the root and `server` directories as needed.
+    - Add required environment variables (see `.env.example` if available).
+
+4. **Start the development servers:**
     ```sh
-    npm start
+    npm run dev
     ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+    This will start both the client (React) and server (Node.js/Express) concurrently.
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+5. **Open the project in your browser:**
+    - Client: [http://localhost:3000](http://localhost:3000)
+    - Server API: [http://localhost:4000/api/v1](http://localhost:4000/api/v1)
+
+## Folder Structure
+
+- `/src` - React frontend code
+- `/server` - Node.js/Express backend code
+- `/src/components` - React components
+- `/src/services` - API and utility functions
+
+## Customization
+
+- Tailwind CSS is fully configured. You can customize styles in `tailwind.config.js`.
+- Update backend routes and controllers in `/server/routes` and `/server/controllers`.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+Contributions are welcome! If you have suggestions or find issues, please open an issue or pull request.
+
+---
+
+**Remote Repository:**
